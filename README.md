@@ -2,7 +2,7 @@
 
 This project comprises two interconnected C programs that create a unique Unix shell experience while incorporating a motivational quotes server. The first program, "unix_shell.c," implements an advanced Unix shell with pipelines and command assignment. Users can execute commands and establish pipelines between them using "|" and assign the output of one command as input to another using "=".
 
-The second program, "motivational_quotes_server.c," acts as a server that serves motivational quotes to clients. It reads motivational quotes from a file, selects one randomly, and sends it to clients through named pipes. Clients request quotes by creating named pipes and sending their pipe names to the server.
+The second program, "quoteserver.c," acts as a server that serves motivational quotes to clients. It reads motivational quotes from a file, selects one randomly, and sends it to clients through named pipes. Clients request quotes by creating named pipes and sending their pipe names to the server.
 
 When running the combined project, users are presented with a dynamic Unix shell environment that not only executes commands and handles pipelines but also displays random motivational quotes before each prompt. The integration of the motivational quotes server adds a unique and motivating touch to the traditional shell experience.
 
