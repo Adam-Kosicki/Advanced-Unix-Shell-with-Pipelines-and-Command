@@ -1,20 +1,9 @@
 # Advanced-Unix-Shell-with-Pipelines-and-Command
 
-This project implements an advanced Unix shell that supports pipelines and command assignment. The shell provides features such as running multiple commands in pipelines and assigning the output of one command as the input of another. It leverages concepts from Unix systems programming and demonstrates the use of various system calls and C programming features.
+This project comprises two interconnected C programs that create a unique Unix shell experience while incorporating a motivational quotes server. The first program, "unix_shell.c," implements an advanced Unix shell with pipelines and command assignment. Users can execute commands and establish pipelines between them using "|" and assign the output of one command as input to another using "=".
 
-## Features
+The second program, "motivational_quotes_server.c," acts as a server that serves motivational quotes to clients. It reads motivational quotes from a file, selects one randomly, and sends it to clients through named pipes. Clients request quotes by creating named pipes and sending their pipe names to the server.
 
-- Pipelines: The shell supports the execution of multiple commands in a pipeline, where the output of one command is used as the input of the next command.
-- Command Assignment: Commands can be assigned to variables using the assignment operator "=".
-- Random Quotes: The shell displays a random quote before each prompt, providing an element of surprise and motivation.
+When running the combined project, users are presented with a dynamic Unix shell environment that not only executes commands and handles pipelines but also displays random motivational quotes before each prompt. The integration of the motivational quotes server adds a unique and motivating touch to the traditional shell experience.
 
-## How It Works
-
-The shell reads user input and processes it based on the presence of pipeline symbols "|" or assignment symbols "=" within the input line. The project utilizes advanced C concepts, such as pipes and the execvp function, to execute commands and manage communication between processes. Child processes are created to execute the individual commands within pipelines.
-
-## Usage
-
-1. Compile the project using a C compiler (e.g., `gcc`).
-
-```bash
-gcc -o shell shell.c
+By combining these two programs, users can enhance their command-line interactions with the shell while receiving motivational quotes that provide an extra layer of inspiration. The seamless integration of these functionalities showcases advanced C programming concepts, including interprocess communication through named pipes and advanced file handling, making it an engaging and educational project for individuals looking to explore Unix systems programming.
